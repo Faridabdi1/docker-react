@@ -14,8 +14,9 @@ deploy:
   app: "docker-react"
   env: "Docker-env"
   bucket_name: "take it from AWS"
-  bucket_path: "docker-react"  on:
-    branch: "master"
+  bucket_path: "docker-react"  
+  on:
+    branch: master
   access_key_id: $in_travis_to_AWS_ACCES_KEY
   secret_access_key:
     secure: "$in_travis_to_AWS_SECURE_KEY_2"
